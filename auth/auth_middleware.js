@@ -6,13 +6,10 @@ module.exports = (req, res, next) => {
   const token = req.headers.authorization;
 
   if (token) {
-    // check that the token is valid
     jwt.verify(token, secrets.jwtSecret, (err, decodedToken) => {
       if (err) {
-        // foul play
-        res.status(401).json({ message: 'Bad panda!' });
+        res.status(401).json({ message: 'You are not authorized here' });
       } else {
-        // token is goooooooooooooooooood
         req.user = {
           username: decodedToken.username,
           role: decodedToken.role,

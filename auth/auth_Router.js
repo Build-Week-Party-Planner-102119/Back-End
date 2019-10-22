@@ -14,13 +14,13 @@ router.get('/', (req, res) => {
   .then(users => {
     res.json(users);
   })
-  res.status(500).json({ message: 'cannot add the user', error });
+  res.status(500).json(error);
 })
 
 //Registers new users
 router.post('/register', (req, res) => {
   let user = req.body;
-  console.log(req.body)
+  // console.log(req.body)
   const hash = bcrypt.hashSync(user.password, 10); 
   user.password = hash;
 
@@ -29,6 +29,7 @@ router.post('/register', (req, res) => {
       res.status(201).json(saved);
     })
     .catch(error => {
+      // console.log(error.message)
       res.status(500).json({ message: 'cannot add the user', error });
     });
 });

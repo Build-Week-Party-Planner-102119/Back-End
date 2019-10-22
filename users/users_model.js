@@ -11,7 +11,11 @@ module.exports = {
 
 
 function find() {
-  return db('users');
+  console.log('here')
+  return db('users')
+  .catch(error => {
+    console.log(error)
+  })
 }
 
 function findBy(filter) {

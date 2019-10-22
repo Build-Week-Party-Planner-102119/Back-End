@@ -14,7 +14,10 @@ router.get('/', (req, res) => {
   .then(users => {
     res.json(users);
   })
-  res.status(500).json(error);
+  .catch(error => {
+    // console.log(error.message)
+    res.status(200).json({ message: 'cannot add the user', error });
+  });
 })
 
 //Registers new users

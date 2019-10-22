@@ -21,4 +21,8 @@ server.get('/', (req, res) => {
   res.send("It's alive!");
 });
 
+server.use('/*', (req, res) => {
+  res.status(200).json({msg: 'server running, but no route found'})
+})
+
 module.exports = server;

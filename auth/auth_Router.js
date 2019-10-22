@@ -14,7 +14,7 @@ router.get('/', (req, res) => {
   .then(users => {
     res.json(users);
   })
-  .catch(err => res.send(err));
+  res.status(500).json({ message: 'cannot add the user', error });
 })
 
 //Registers new users
@@ -51,7 +51,7 @@ router.post('/login', (req, res) => {
       }
     })
     .catch(error => {
-      res.status(500).json(error);
+      res.status(500).json({ message: 'cannot add the user', error });
     });
 });
 

@@ -20,7 +20,7 @@ router.get("/", (req, res) => {
 
 //Registers new users
 router.post("/register", (req, res) => {
-  console.log(req.body);
+  console.log(req);
   let user = req.body;
   // console.log(req.body)
   const hash = bcrypt.hashSync(user.password, 10);

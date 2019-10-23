@@ -49,6 +49,7 @@ router.post("/login", (req, res) => {
         const token = generateToken(user);
 
         res.status(200).json({
+          id: user.id,
           message: `Welcome ${user.username}!`,
           token
         });
@@ -57,7 +58,8 @@ router.post("/login", (req, res) => {
       }
     })
     .catch(error => {
-      res.status(500).json({ message: "cannot add the user", error });
+      console.log(error)
+      res.status(500).json({ message: "cannot login the user", error });
     });
 });
 

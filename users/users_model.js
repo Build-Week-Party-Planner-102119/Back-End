@@ -11,7 +11,7 @@ module.exports = {
 
 
 function find() {
-  console.log('here')
+  //console.log('here')
   return db('users')
   .catch(error => {
     console.log(error)

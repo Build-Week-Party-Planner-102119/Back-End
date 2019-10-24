@@ -22,5 +22,29 @@ Start the development local server, this git will use port 8000
 npm start server
 ```
 
+## Endpoints
 
+### Auth
+
+**POST addUser ‘https://party-planner-lambda.herokuapp.com/api/auth/register’**
+
+Registers the new user to the 'users' DB
+
+```  
+SAMPLE BODY: {
+	"username": "newUser",
+	"password": "pass"
+	}
+```
+
+returns: newly registered user object
+```
+SAMPLE RETURN: {
+	  "id": 45,
+  "username": "newUser",
+  "password": "$2a$10$m.iLzXlV90haQuc4.GHAM.AQ2ikjKPEDVeqbNIUex1iv48TZIzcE6"
+}
+```
+
+Does not log user in, just registers
 

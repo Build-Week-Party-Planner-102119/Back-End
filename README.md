@@ -37,7 +37,7 @@ SAMPLE BODY: {
 	}
 ```
 
-returns: newly registered user object
+returns: newly registered user object with a hashed password.
 ```
 SAMPLE RETURN: {
     "id": 45,

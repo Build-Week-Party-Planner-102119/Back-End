@@ -40,11 +40,29 @@ SAMPLE BODY: {
 returns: newly registered user object
 ```
 SAMPLE RETURN: {
-	  "id": 45,
-  "username": "newUser",
-  "password": "$2a$10$m.iLzXlV90haQuc4.GHAM.AQ2ikjKPEDVeqbNIUex1iv48TZIzcE6"
-}
+    "id": 45,
+    "username": "newUser",
+    "password": "$2a$10$m.iLzXlV90haQuc4.GHAM.AQ2ikjKPEDVeqbNIUex1iv48TZIzcE6"
+  }
 ```
 
-Does not log user in, just registers
+Does not log user in, just registers.
+
+**POST loginUser ‘https://party-planner-lambda.herokuapp.com/api/auth/login’**
+
+Logs in user to 'users' DB
+```
+SAMPLE BODY: {
+	"username": "newUser",
+	"password": "pass"
+	}
+```
+returns: logged in user information and token
+```
+SAMPLE RETURN: {
+  "id": 45,
+  "message": "Welcome newUser!",
+  "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWJqZWN0Ijo0NSwidXNlcm5hbWUiOiJuZXdVc2VyIiwiaWF0IjoxNTcxOTM2NDUwLCJleHAiOjE1NzE5Nzk2NTB9.OT1UJ5TMdss9-d9KShaSdkjPoQNsiCYNrkU_P8i4rUo"
+}
+```
 

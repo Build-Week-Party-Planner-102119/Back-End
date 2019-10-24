@@ -73,7 +73,11 @@ This API is optimized to be hosted with  [Heroku](https://devcenter.heroku.com/)
 ## Built With
 
 * [Knex](http://knexjs.org/) - SQL query builder
+* [Node.js] (https://nodejs.org/en/)
+* [JWT] (https://jwt.io/)
 
-[docs](https://docs.google.com/document/d/1kHqoWAwLW5u8F2TIxOgkbOIElOj_qqlOBK8IBodKSPM/edit?usp=sharing)
+## Planning Dcoumentation
+
+To see how the thought process of this amzing team, please check out our [docs](https://docs.google.com/document/d/1kHqoWAwLW5u8F2TIxOgkbOIElOj_qqlOBK8IBodKSPM/edit?usp=sharing).
 
 

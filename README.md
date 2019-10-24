@@ -68,12 +68,12 @@ SAMPLE RETURN: {
 
 ## Deployment
 
-This API is optimized to be hosted with  [Heroku]((https://devcenter.heroku.com/)). 
+This API is optimized to be hosted with  [Heroku](https://devcenter.heroku.com/). 
 
 ## Built With
 
-* [Knex]((http://knexjs.org/)) - SQL query builder
+* [Knex](http://knexjs.org/) - SQL query builder
 
-[docs]((https://docs.google.com/document/d/1kHqoWAwLW5u8F2TIxOgkbOIElOj_qqlOBK8IBodKSPM/edit?usp=sharing))
+[docs](https://docs.google.com/document/d/1kHqoWAwLW5u8F2TIxOgkbOIElOj_qqlOBK8IBodKSPM/edit?usp=sharing)
 
 

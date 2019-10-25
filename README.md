@@ -78,6 +78,6 @@ This API is optimized to be hosted with  [Heroku](https://devcenter.heroku.com/)
 
 ## Planning Dcoumentation
 
-To see how the thought process of this amzing team, please check out our [docs](https://docs.google.com/document/d/1kHqoWAwLW5u8F2TIxOgkbOIElOj_qqlOBK8IBodKSPM/edit?usp=sharing).
+To see the thought process of this amazing team, please check out our [docs](https://docs.google.com/document/d/1kHqoWAwLW5u8F2TIxOgkbOIElOj_qqlOBK8IBodKSPM/edit?usp=sharing).
 
 

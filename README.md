@@ -1,6 +1,6 @@
 # Party Planner API
 
-**The [Party Planner App](https://lambdapartyplanner.now.sh/) is a way to create party. This API provides an auth router. The auth router contains an object that has a username, password, which is hashed and includes a JWT. Check out our marketing page [here](https://build-week-party-planner-102119.github.io/UI-1/)**
+**The [Party Planner App](https://lambdapartyplanner.now.sh/) is a way to create party. This API provides an auth router. The auth router contains an object that has a username, password, which is hashed and includes a JWT. Check out our marketing page [here](https://build-week-party-planner-102119.github.io/UI-1/).**
 
 ## Getting Started
 
